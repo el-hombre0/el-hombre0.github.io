@@ -1,16 +1,30 @@
 @import "null-style.css";
 
+body{
+    font-family: Arial;
+}
 .wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .content {
+    flex: 1 1 auto;
 }
 .header {
+    background-color: #495931;
+
 }
 .container {
+    max-width: 1226px;
+    margin: 0px auto;
 }
 .header__text {
+    
 }
 .header__image {
+    
 }
 .header__phone-number {
 }
@@ -23,8 +37,17 @@
 .main {
 }
 .footer {
+    background-color: #495931;
 }
 .footer__row {
+    display: flex;
+    height: 205px;
+    justify-content: space-between;
+    color:#ffff;
+
+}
+.footer__row h3{
+    color: rgb(197, 118, 15);
 }
 .footer__social-networks {
 }
@@ -33,4 +56,8 @@
 .footer__map {
 }
 .footer__line {
+    display: flex;
+    height: 30px;
+    justify-content: start;
+    color: #a4ac98;
 }

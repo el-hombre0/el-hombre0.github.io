@@ -14,25 +14,43 @@ body{
 }
 .header {
     background-color: #495931;
-
 }
 .container {
     max-width: 1226px;
     margin: 0px auto;
 }
+.header__logo__text{
+    color: #fff;
+}
 .header__text {
-    
+    color:#fff;
+    font-size: 50px;  
 }
 .header__image {
     
 }
 .header__phone-number {
+    color:#fff;
 }
 .menu {
+    background: #403e22;
 }
 .menu__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    /* margin: 1em; */
 }
 .menu__item {
+    text-transform: uppercase;
+    color: #ccab83;
+    font-size: 20px;
+    font-weight: bold;
+    /* padding: 10px; */
+    /* margin: 5px; */
+}
+.menu__item a:hover{
+    background: rgb(186, 185, 160);
 }
 .main {
 }

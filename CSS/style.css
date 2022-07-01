@@ -2,6 +2,16 @@
 
 body{
     font-family: Arial;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: PFAgoraSansPro, "Myriad Pro", Helvetica, Arial, sans-serif;
 }
 .wrapper {
     min-height: 100%;
@@ -32,6 +42,10 @@ body{
 .header__phone-number {
     color:#fff;
 }
+.header__phone-number h2 a {
+    text-decoration: none;
+}
+
 .menu {
     background: #403e22;
 }
@@ -49,11 +63,33 @@ body{
     /* padding: 10px; */
     /* margin: 5px; */
 }
-.menu__item a:hover{
-    background: rgb(186, 185, 160);
+.menu__item:hover{
+    color: #dfc19e;
 }
-.main {
+.main h2{
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #495931;
+    text-align: center;
+    /* display: inline-block; */
+    border-bottom: 3px solid #403e22e9;
 }
+#about{
+    font-size: 18px;
+    line-height: 1.6;
+}
+#about > p{
+    margin: 18px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+#about #quote{
+    text-align: right;
+    margin-bottom: 36px;
+}
+
 .footer {
     background-color: #495931;
 }

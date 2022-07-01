@@ -1,117 +1,150 @@
 @import "null-style.css";
 
-body{
-    font-family: Arial;
-    font-style: normal;
-    font-variant-ligatures: normal;
-    font-variant-caps: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    font-size: 16px;
-    line-height: 1.4;
-    font-family: PFAgoraSansPro, "Myriad Pro", Helvetica, Arial, sans-serif;
+body {
+  font-family: Arial;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: PFAgoraSansPro, "Myriad Pro", Helvetica, Arial, sans-serif;
 }
 .wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .content {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 .header {
-    background-color: #495931;
+  background-color: #495931;
 }
 .container {
-    max-width: 1226px;
-    margin: 0px auto;
+  max-width: 1226px;
+  margin: 0px auto;
 }
-.header__logo__text{
-    color: #fff;
+.header__logo__image {
+  padding: 1em;
+  
+}
+.header__logo__image img{
+    margin: 0 1em 0 0;
+    float: right;
+}
+.header__logo__text {
+  color: #fff;
 }
 .header__text {
-    color:#fff;
-    font-size: 50px;  
+  color: #fff;
+  font-size: 50px;
 }
 .header__image {
-    
 }
 .header__phone-number {
-    color:#fff;
+  color: #fff;
 }
-.header__phone-number h2 a {
-    text-decoration: none;
+#number {
+  text-decoration: none;
+  color: #fff;
 }
-
+#number a:hover {
+  color: #fff;
+}
 .menu {
-    background: #403e22;
+  background: #403e22;
 }
 .menu__list {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5em;
-    /* margin: 1em; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+  /* margin: 1em; */
 }
 .menu__item {
-    text-transform: uppercase;
-    color: #ccab83;
-    font-size: 20px;
-    font-weight: bold;
-    /* padding: 10px; */
-    /* margin: 5px; */
+  text-transform: uppercase;
+  color: #ccab83;
+  font-size: 20px;
+  font-weight: bold;
+  /* padding: 10px; */
+  /* margin: 5px; */
 }
-.menu__item:hover{
-    color: #dfc19e;
+.menu__item:hover {
+  color: #dfc19e;
 }
-.main h2{
-    font-size: 24px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: #495931;
-    text-align: center;
-    /* display: inline-block; */
-    border-bottom: 3px solid #403e22e9;
+.main h2 {
+  font-size: 24px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #495931;
+  text-align: center;
+  /* display: inline-block; */
+  border-bottom: 3px solid #403e22e9;
 }
-#about{
-    font-size: 18px;
-    line-height: 1.6;
+#about {
+  font-size: 18px;
+  line-height: 1.6;
 }
-#about > p{
-    margin: 18px;
-    text-indent: 20px;
-    text-align: justify;
+#about > p {
+  margin: 18px;
+  text-indent: 20px;
+  text-align: justify;
 }
 
-#about #quote{
-    text-align: right;
-    margin-bottom: 36px;
+#about #quote {
+  text-align: right;
+  margin-bottom: 36px;
 }
 
 .footer {
-    background-color: #495931;
+  background-color: #495931;
 }
 .footer__row {
-    display: flex;
-    height: 205px;
-    justify-content: space-between;
-    color:#ffff;
+  display: flex;
+  height: 205px;
+  justify-content: space-between;
+  color: #ffff;
+}
+.footer__row h3 {
+  color: rgb(197, 118, 15);
+}
+.footer__social {
+}
 
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  float: left;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  margin: 0 10px 10px 0;
+  padding: 6px;
+
+  background: #3b5998;
+  color: #fff;
 }
-.footer__row h3{
-    color: rgb(197, 118, 15);
+.facebook a:hover {
+  background: #fff;
+  color: #000;
 }
-.footer__social-networks {
+.vk a:hover {
+  background: #fff;
+  color: #000;
 }
 .footer__address {
 }
 .footer__map {
 }
 .footer__line {
-    display: flex;
-    height: 30px;
-    justify-content: start;
-    color: #a4ac98;
+  display: flex;
+  height: 30px;
+  justify-content: start;
+  color: #a4ac98;
 }

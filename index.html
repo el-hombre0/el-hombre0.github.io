@@ -72,9 +72,7 @@
               </li>
 
               <li>
-                <a class="menu__item" href="#contacts"
-                  >Контакты</a
-                >
+                <a class="menu__item" href="#contacts">Контакты</a>
               </li>
             </ul>
           </div>
@@ -84,6 +82,32 @@
       <div class="content">
         <main class="main">
           <div class="container">
+            <!-- Слайдер -->
+            <div class="sim-slider">
+              <ul class="sim-slider-list">
+                <li><img src="images/screen.gif" alt="screen" /></li>
+                <!-- это экран -->
+                <li class="sim-slider-element">
+                  <img src="slide1.jpg" alt="1" />
+                </li>
+                <li class="sim-slider-element">
+                  <img src="slide2.jpg" alt="2" />
+                </li>
+                <li class="sim-slider-element">
+                  <img src="slide3.jpg" alt="3" />
+                </li>
+                <li class="sim-slider-element">
+                  <img src="slide4.jpg" alt="4" />
+                </li>
+                <li class="sim-slider-element">
+                  <img src="slide5.jpg" alt="5" />
+                </li>
+              </ul>
+              <div class="sim-slider-arrow-left"></div>
+              <div class="sim-slider-arrow-right"></div>
+              <div class="sim-slider-dots"></div>
+            </div>
+            <!-- Новости -->
             <article id="news">
               <h2>Новости</h2>
             </article>
@@ -168,5 +192,11 @@
         </footer>
       </div>
     </div>
+    <!-- подключение слайдера -->
+    <script src="sim-slider.js"></script>
+    <!-- вызов слайдера -->
+    <script>
+      new Sim();
+    </script>
   </body>
 </html>

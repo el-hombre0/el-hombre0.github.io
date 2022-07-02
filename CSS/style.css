@@ -31,11 +31,10 @@ body {
 }
 .header__logo__image {
   padding: 1em;
-  
 }
-.header__logo__image img{
-    margin: 0 1em 0 0;
-    float: right;
+.header__logo__image img {
+  margin: 0 1em 0 0;
+  float: right;
 }
 .header__logo__text {
   color: #fff;
@@ -47,14 +46,19 @@ body {
 .header__image {
 }
 .header__phone-number {
+  text-align: right;
   color: #fff;
+  padding-bottom: 1em;
 }
-#number {
+.header__phone-number p{
+  font-size: 1.5em;
+}
+.header__phone-number p a {
   text-decoration: none;
-  color: #fff;
+  color: inherit;
 }
-#number a:hover {
-  color: #fff;
+.header__phone-number p a:hover {
+  color: #bbb;
 }
 .menu {
   background: #403e22;
@@ -63,15 +67,12 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
-  /* margin: 1em; */
 }
 .menu__item {
   text-transform: uppercase;
   color: #ccab83;
   font-size: 20px;
   font-weight: bold;
-  /* padding: 10px; */
-  /* margin: 5px; */
 }
 .menu__item:hover {
   color: #dfc19e;
@@ -80,7 +81,7 @@ body {
 /* Слайдер */
 
 .sim-slider img {
-  width: 100%;  
+  width: 100%;
 }
 
 /* General styles */
@@ -132,11 +133,11 @@ div.sim-slider-arrow-right {
 }
 
 div.sim-slider-arrow-left:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 div.sim-slider-arrow-right:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 div.sim-slider-dots {
@@ -155,7 +156,7 @@ span.sim-dot {
   margin: 5px 7px;
   padding: 0;
   display: inline-block;
-  background-color: #BBB;
+  background-color: #bbb;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -189,12 +190,13 @@ span.sim-dot {
 }
 .footer__row {
   display: flex;
-  height: 205px;
+  height: 300px;
   justify-content: space-between;
   color: #ffff;
 }
 .footer__row h3 {
   color: rgb(197, 118, 15);
+  font-size: 1.5em;
 }
 .footer__social {
 }
@@ -222,14 +224,20 @@ span.sim-dot {
   background: #fff;
   color: #000;
 }
-.footer__social{
+.footer__social {
   padding-top: 1em;
 }
 .footer__address {
   padding-top: 1em;
 }
-.footer__map {
+.footer__contacts {
   padding-top: 1em;
+}
+.footer__contacts p a {
+  color: inherit;
+}
+.footer__contacts p a:hover {
+  color: #bbb;
 }
 .footer__line {
   display: flex;

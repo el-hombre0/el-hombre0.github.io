@@ -68,6 +68,9 @@ body {
   justify-content: space-between;
   padding: 1.5em;
 }
+.menu__list .menu__item:hover{
+  text-decoration: underline;
+}
 .menu__item {
   text-transform: uppercase;
   color: #ccab83;
@@ -161,6 +164,15 @@ span.sim-dot {
   cursor: pointer;
 }
 
+/* Новости */
+#news .news-wrapper{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#news .news-wrapper .news-plate{
+  
+}
 .main h2 {
   font-size: 24px;
   font-weight: bolder;

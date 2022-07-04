@@ -1,5 +1,15 @@
 @import "null-style.css";
 
+/* Плавная прокрутка всего документа */
+html {
+  scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   font-family: Arial;
   font-style: normal;
@@ -50,7 +60,7 @@ body {
   color: #fff;
   padding-bottom: 1em;
 }
-.header__phone-number p{
+.header__phone-number p {
   font-size: 1.5em;
 }
 .header__phone-number p a {
@@ -68,7 +78,7 @@ body {
   justify-content: space-between;
   padding: 1.5em;
 }
-.menu__list .menu__item:hover{
+.menu__list .menu__item:hover {
   text-decoration: underline;
 }
 .menu__item {
@@ -165,13 +175,33 @@ span.sim-dot {
 }
 
 /* Новости */
-#news .news-wrapper{
+.news-wrapper {
   display: grid;
-  justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2vw;
+  margin: 1em;
 }
-#news .news-wrapper .news-plate{
-  
+.news-wrapper > .news-plate {
+  padding: 0.5em;
+  color: green;
+  font-style: italic;
+}
+
+.news-image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.news-image:hover {
+  opacity: 0.7;
+}
+.news-text {
+  color: inherit;
+}
+.news-text:hover {
+  text-decoration: underline;
 }
 .main h2 {
   font-size: 24px;
@@ -179,7 +209,6 @@ span.sim-dot {
   text-transform: uppercase;
   color: #495931;
   text-align: center;
-  /* display: inline-block; */
   border-bottom: 3px solid #403e22e9;
 }
 #about {
@@ -202,7 +231,7 @@ span.sim-dot {
 }
 .footer__row {
   display: flex;
-  height: 300px;
+  height: 21em;
   justify-content: space-between;
   color: #ffff;
 }
@@ -211,6 +240,10 @@ span.sim-dot {
   font-size: 1.5em;
 }
 .footer__social {
+  padding-top: 1em;
+}
+.footer__social .social {
+  margin: 1em;
 }
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
@@ -242,8 +275,16 @@ span.sim-dot {
 .footer__address {
   padding-top: 1em;
 }
+.footer__address p {
+  margin: 0.5em 0;
+  font-size: 20px;
+}
 .footer__contacts {
   padding-top: 1em;
+}
+.footer__contacts p {
+  margin: 0.5em 0;
+  font-size: 20px;
 }
 .footer__contacts p a {
   color: inherit;

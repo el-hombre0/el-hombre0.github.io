@@ -1,53 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/dancing.png" type=" image/png" />
-    <!-- Подключаем CSS слайдера -->
-    <link rel="stylesheet" href="CSS/simple-adaptive-slider.css" />
-    <!-- Подключаем JS слайдера -->
-    <script defer src="js/simple-adaptive-slider.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // инициализация слайдера
-        new ItcSimpleSlider(".itcss", {
-          loop: true,
-          autoplay: false,
-          interval: 5000,
-          swipe: true,
-        });
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/dancing.png" type=" image/png" />
+  <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="CSS/simple-adaptive-slider.css" />
+  <!-- Подключаем JS слайдера -->
+  <script defer src="js/simple-adaptive-slider.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // инициализация слайдера
+      new ItcSimpleSlider(".itcss", {
+        loop: true,
+        autoplay: false,
+        interval: 5000,
+        swipe: true,
       });
-    </script>
-    <title>ЦОПЭТ "Высокий стиль"</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="content">
-        <header class="header">
-          <div class="container">
-            <div class="header__logo">
-              <div class="header__logo__image">
-                <img src="images/studio_logo.png" alt="Логотип" width="10.5%" />
-                <img
-                  src="images/military_university_emb_n6740.gif"
-                  alt="Герб"
-                  width="10%"
-                />
-              </div>
-              <div class="header__logo__text">
-                <h2>
-                  ВОЕННЫЙ УНИВЕРСИТЕТ ИМЕНИ КНЯЗЯ АЛЕКСАНДРА НЕВСКОГО
-                  МИНИСТЕРСТВА ОБОРОНЫ РОССИЙСКОЙ ФЕДЕРАЦИИ
-                </h2>
-              </div>
+    });
+  </script>
+  <title>ЦОПЭТ "Высокий стиль"</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="container">
+          <div class="header__logo">
+            <div class="header__logo__image">
+              <img src="images/studio_logo.png" alt="Логотип" width="10.5%" />
             </div>
+
             <div class="header__text">
               <h1>
                 Центр общегражданского Протокольного Этикета Торжеств "Высокий
@@ -61,297 +49,261 @@
               </p>
             </div>
           </div>
-        </header>
-      </div>
-
-      <div class="content">
-        <nav class="menu">
-          <div class="container">
-            <ul class="menu__list">
-              <li>
-                <a class="menu__item" href="#">Главная</a>
-              </li>
-              <li>
-                <a class="menu__item" href="#news">Новости</a>
-              </li>
-              <li>
-                <a class="menu__item" href="#about">О нас</a>
-              </li>
-              <li>
-                <a class="menu__item" href="menu_pages\courses.html">Курсы</a>
-              </li>
-
-              <li>
-                <a class="menu__item" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      <div class="content">
-        <main class="main">
-          <div class="container">
-            <!-- Слайдер -->
-            <!-- Разметка слайдера (html код) -->
-            <div class="itcss">
-              <div class="itcss__wrapper">
-                <div class="itcss__items">
-                  <div class="itcss__item">
-                    <!-- Контент 1 слайда -->
-                    <img
-                      src="images/slide1.jpg"
-                      alt=""
-                      width="100%"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="itcss__item">
-                    <!-- Контент 2 слайда -->
-                    <img
-                      src="images/slide2.jpg"
-                      alt=""
-                      width="100%"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="itcss__item">
-                    <!-- Контент 3 слайда -->
-                    <img
-                      src="images/slide3.jpg"
-                      alt=""
-                      width="100%"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="itcss__item">
-                    <!-- Контент 4 слайда -->
-                    <img
-                      src="images/slide4.jpg"
-                      alt=""
-                      width="100%"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="itcss__item">
-                    <!-- Контент 5 слайда -->
-                    <img
-                      src="images/slide5.jpg"
-                      alt=""
-                      width="100%"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- Стрелки для перехода к предыдущему и следующему слайду -->
-              <a
-                class="itcss__control itcss__control_prev"
-                href="#"
-                role="button"
-                data-slide="prev"
-              ></a>
-              <a
-                class="itcss__control itcss__control_next"
-                href="#"
-                role="button"
-                data-slide="next"
-              ></a>
-            </div>
-
-            <!-- Новости -->
-            <article id="news">
-              <h2>Новости</h2>
-              <div class="news-wrapper">
-                <div class="news-plate">
-                  <div class="pub-date">
-                    <p>01 Июля 2022 17:38</p>
-                  </div>
-                  <a href="#"
-                    ><img src="images/news/news1.jpg" class="news-image" alt=""
-                  /></a>
-                  <div class="news-text">
-                    <a href="#"
-                      ><p>С Днём Великой Победы! Помним, гордимся!</p></a
-                    >
-                  </div>
-                </div>
-
-                <div class="news-plate">
-                  <div class="pub-date">
-                    <p>03 Июля 2022 17:38</p>
-                  </div>
-                  <a href="#"
-                    ><img src="images/news/news1.jpg" class="news-image" alt=""
-                  /></a>
-                  <div class="news-text">
-                    <a href="#"
-                      ><p>
-                        Центр Общегражданского Протокольного Этикета Торжеств
-                        «Высокий стиль» под руководством Лидии Николаевны
-                        Щедельской с радостью приглашает Вас на Камерный бал «У
-                        времени нет границ»
-                      </p></a
-                    >
-                  </div>
-                </div>
-
-                <div class="news-plate">
-                  <div class="pub-date">
-                    <p>03 Июля 2022 17:38</p>
-                  </div>
-                  <img src="images/news/news1.jpg" class="news-image" alt="" />
-                  <div class="news-text">
-                    <a href="#"
-                      ><p>
-                        Центр Общегражданского Протокольного Этикета Торжеств
-                        «Высокий стиль» под руководством Лидии Николаевны
-                        Щедельской с радостью приглашает Вас на Камерный бал «У
-                        времени нет границ»
-                      </p></a
-                    >
-                  </div>
-                </div>
-
-                <div class="news-plate">
-                  <div class="pub-date">
-                    <p>03 Июля 2022 17:38</p>
-                  </div>
-                  <img src="images/news/news1.jpg" class="news-image" alt="" />
-                  <div class="news-text">
-                    <a href="#"
-                      ><p>
-                        Центр Общегражданского Протокольного Этикета Торжеств
-                        «Высокий стиль» под руководством Лидии Николаевны
-                        Щедельской с радостью приглашает Вас на Камерный бал «У
-                        времени нет границ»
-                      </p></a
-                    >
-                  </div>
-                </div>
-
-                <div class="news-plate">
-                  <div class="pub-date">
-                    <p>03 Июля 2022 17:38</p>
-                  </div>
-                  <img src="images/news/news2.jpg" class="news-image" alt="" />
-                  <div class="news-text">
-                    <a href="#"
-                      ><p>
-                        Центр Общегражданского Протокольного Этикета Торжеств
-                        «Высокий стил
-                      </p></a
-                    >
-                  </div>
-                </div>
-
-                <div class="news-plate">
-                  <div class="pub-date">
-                    <p>03 Июля 2022 17:38</p>
-                  </div>
-                  <img src="images/news/news2.jpg" class="news-image" alt="" />
-                  <div class="news-text">
-                    <a href="#"
-                      ><p>
-                        Центр Общегражданского Протокольного Этикета Торжеств
-                        «Высокий стил
-                      </p></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article id="about">
-              <h2>О нас</h2>
-              <p id="quote">
-                <i
-                  >«Должно приучать россиян к уважению собственному»<br />
-                  Ф. Лефорт, 1685</i
-                >
-              </p>
-              <p>
-                Мы живем в XXI веке, живое общение часто заменяют мобильными
-                телефонами или интернетом. Сплошь и рядом машины и высокие
-                технологии. И если современному человеку задать вопрос о бале,
-                то у большинства людей сложится картинка из кинофильма «Воина и
-                мир». Образ Наташи Ростовой многим кажется, что это прекрасное
-                прошлое‚ которое нельзя вернуть. Да, прошлого не вернуть, и
-                стоит ли его возвращать?!
-              </p>
-              <p>
-                Центр общегражданского Протокольного Этикета Торжеств (ЦОПЭТ)
-                «Высокий стиль» занимается возрождением бальной формы торжеств,
-                придавая ему современное звучание. Современное общество не
-                нуждается в банальном копировании прошлого. Ему нужны
-                современные балы, отвечающие тенденциям сегодняшнего дня,
-                помогающие решать насущные вопросы.
-              </p>
-              <p>
-                Итак, участие в бале открывает новые возможности в овладении
-                искусством танца и хорошими манерами, в развитии навыков
-                бального и светского этикета, а также в освоении базовых основ
-                салонной бальной хореографии. Бальные танцы, являясь
-                произведением поведенческого искусства, развивают у человека
-                потребность в гармонии души и тела, учат лучше понимать,
-                чувствовать и уважать друг друга.
-              </p>
-              <p>
-                В организации и проведении балов и танцевальных вечеров ЦОПЭТ
-                принимает участие Парадно-протокольный взвод (ППВ) — курсанты
-                Военного университета Министерства Обороны Российской Федерации.
-                Мы будем рады видеть Вас на наших балах и танцевальных вечерах!
-              </p>
-            </article>
-          </div>
-        </main>
-      </div>
-
-      <div class="content">
-        <footer class="footer" id="contacts">
-          <div class="container">
-            <div class="footer__row">
-              <div class="footer__social">
-                <h3>Мы в социальных сетях</h3>
-                <div class="social facebook">
-                  <a
-                    href="https://www.facebook.com/groups/757119307733987/"
-                    target="_blank"
-                    ><i class="fa fa-facebook fa-2x"></i
-                  ></a>
-                </div>
-                <div class="social vk">
-                  <a href="https://vk.com/club139525927" target="_blank"
-                    ><i class="fa fa-vk fa-2x"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="footer__address">
-                <h3>Адрес</h3>
-                <p>123001, Москва, ул. Б. Садовая, 14</p>
-                <a
-                  href="https://yandex.ru/maps/?um=constructor%3A72e16fb0ffd8bd5e9b41f0607a1b624b2e756909d3f81287e76990a57ca254ec&amp;source=constructorStatic"
-                  target="_blank"
-                  ><img
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A72e16fb0ffd8bd5e9b41f0607a1b624b2e756909d3f81287e76990a57ca254ec&amp;width=320&amp;height=240&amp;lang=ru_RU"
-                    alt=""
-                    style="border: 0"
-                /></a>
-              </div>
-              <div class="footer__contacts">
-                <h3>Как с нами связаться</h3>
-                <p><a href="mailto:nfywvbh@mail.ru"> nfywvbh@mail.ru</a></p>
-                <p>
-                  <a href="mailto:fotonfywvbh@mail.ru">fotonfywvbh@mail.ru</a>
-                </p>
-                <p>
-                  <a href="tel: 89060430106"> 8 (906) 043-01-06</a>
-                </p>
-              </div>
-            </div>
-            <div class="footer__line">&#169; 2022</div>
-          </div>
-        </footer>
-      </div>
+      </header>
     </div>
-  </body>
+
+    <div class="content">
+      <nav class="menu">
+        <div class="container">
+          <ul class="menu__list">
+            <li>
+              <a class="menu__item" href="#">Главная</a>
+            </li>
+            <li>
+              <a class="menu__item" href="#news">Новости</a>
+            </li>
+            <li>
+              <a class="menu__item" href="#about">О нас</a>
+            </li>
+            <li>
+              <a class="menu__item" href="menu_pages\courses.html">Курсы</a>
+            </li>
+
+            <li>
+              <a class="menu__item" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main class="main">
+        <div class="container">
+          <!-- Слайдер -->
+          <!-- Разметка слайдера (html код) -->
+          <div class="itcss">
+            <div class="itcss__wrapper">
+              <div class="itcss__items">
+                <div class="itcss__item">
+                  <!-- Контент 1 слайда -->
+                  <img src="images/slide1.jpg" alt="" width="100%" loading="lazy" />
+                </div>
+                <div class="itcss__item">
+                  <!-- Контент 2 слайда -->
+                  <img src="images/slide2.jpg" alt="" width="100%" loading="lazy" />
+                </div>
+                <div class="itcss__item">
+                  <!-- Контент 3 слайда -->
+                  <img src="images/slide3.jpg" alt="" width="100%" loading="lazy" />
+                </div>
+                <div class="itcss__item">
+                  <!-- Контент 4 слайда -->
+                  <img src="images/slide4.jpg" alt="" width="100%" loading="lazy" />
+                </div>
+                <div class="itcss__item">
+                  <!-- Контент 5 слайда -->
+                  <img src="images/slide5.jpg" alt="" width="100%" loading="lazy" />
+                </div>
+              </div>
+            </div>
+            <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+            <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+            <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+          </div>
+
+          <!-- Новости -->
+          <article id="news">
+            <h2>Новости</h2>
+            <div class="news-wrapper">
+              <div class="news-plate">
+                <div class="pub-date">
+                  <p>01 Июля 2022 17:38</p>
+                </div>
+                <a href="#"><img src="images/news/news1.jpg" class="news-image" alt="" /></a>
+                <div class="news-text">
+                  <a href="#">
+                    <p>С Днём Великой Победы! Помним, гордимся!</p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="news-plate">
+                <div class="pub-date">
+                  <p>03 Июля 2022 17:38</p>
+                </div>
+                <a href="#"><img src="images/news/news1.jpg" class="news-image" alt="" /></a>
+                <div class="news-text">
+                  <a href="#">
+                    <p>
+                      Центр Общегражданского Протокольного Этикета Торжеств
+                      «Высокий стиль» под руководством Лидии Николаевны
+                      Щедельской с радостью приглашает Вас на Камерный бал «У
+                      времени нет границ»
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="news-plate">
+                <div class="pub-date">
+                  <p>03 Июля 2022 17:38</p>
+                </div>
+                <img src="images/news/news1.jpg" class="news-image" alt="" />
+                <div class="news-text">
+                  <a href="#">
+                    <p>
+                      Центр Общегражданского Протокольного Этикета Торжеств
+                      «Высокий стиль» под руководством Лидии Николаевны
+                      Щедельской с радостью приглашает Вас на Камерный бал «У
+                      времени нет границ»
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="news-plate">
+                <div class="pub-date">
+                  <p>03 Июля 2022 17:38</p>
+                </div>
+                <img src="images/news/news1.jpg" class="news-image" alt="" />
+                <div class="news-text">
+                  <a href="#">
+                    <p>
+                      Центр Общегражданского Протокольного Этикета Торжеств
+                      «Высокий стиль» под руководством Лидии Николаевны
+                      Щедельской с радостью приглашает Вас на Камерный бал «У
+                      времени нет границ»
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="news-plate">
+                <div class="pub-date">
+                  <p>03 Июля 2022 17:38</p>
+                </div>
+                <img src="images/news/news2.jpg" class="news-image" alt="" />
+                <div class="news-text">
+                  <a href="#">
+                    <p>
+                      Центр Общегражданского Протокольного Этикета Торжеств
+                      «Высокий стил
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="news-plate">
+                <div class="pub-date">
+                  <p>03 Июля 2022 17:38</p>
+                </div>
+                <img src="images/news/news2.jpg" class="news-image" alt="" />
+                <div class="news-text">
+                  <a href="#">
+                    <p>
+                      Центр Общегражданского Протокольного Этикета Торжеств
+                      «Высокий стил
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article id="about">
+            <h2>О нас</h2>
+            <p id="quote">
+              <i>«Должно приучать россиян к уважению собственному»<br />
+                Ф. Лефорт, 1685</i>
+            </p>
+            <p>
+              Мы живем в XXI веке, живое общение часто заменяют мобильными
+              телефонами или интернетом. Сплошь и рядом машины и высокие
+              технологии. И если современному человеку задать вопрос о бале,
+              то у большинства людей сложится картинка из кинофильма «Воина и
+              мир». Образ Наташи Ростовой многим кажется, что это прекрасное
+              прошлое‚ которое нельзя вернуть. Да, прошлого не вернуть, и
+              стоит ли его возвращать?!
+            </p>
+            <p>
+              Центр общегражданского Протокольного Этикета Торжеств (ЦОПЭТ)
+              «Высокий стиль» занимается возрождением бальной формы торжеств,
+              придавая ему современное звучание. Современное общество не
+              нуждается в банальном копировании прошлого. Ему нужны
+              современные балы, отвечающие тенденциям сегодняшнего дня,
+              помогающие решать насущные вопросы.
+            </p>
+            <p>
+              Итак, участие в бале открывает новые возможности в овладении
+              искусством танца и хорошими манерами, в развитии навыков
+              бального и светского этикета, а также в освоении базовых основ
+              салонной бальной хореографии. Бальные танцы, являясь
+              произведением поведенческого искусства, развивают у человека
+              потребность в гармонии души и тела, учат лучше понимать,
+              чувствовать и уважать друг друга.
+            </p>
+            <p>
+              В организации и проведении балов и танцевальных вечеров ЦОПЭТ
+              принимает участие Парадно-протокольный взвод (ППВ) — курсанты
+              Военного университета Министерства Обороны Российской Федерации.
+              Мы будем рады видеть Вас на наших балах и танцевальных вечерах!
+            </p>
+            <div id="about-titles">
+              <div class="title item1"><a href="">Балы исторические и современные</a></div>
+              <div class="title item2">Классификация современных балов</div>
+              <div class="title item3">Этика и этикет бала</div>
+              <div class="title item4">Веерный этикет</div>
+              <div class="title item5">Подготовка к балу</div>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+
+    <div class="content">
+      <footer class="footer" id="contacts">
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__social">
+              <div class="footer__header">
+                <h3>Мы в социальных сетях</h3>
+              </div>
+              <div class="social facebook">
+                <a href="https://www.facebook.com/groups/757119307733987/" target="_blank"><i
+                    class="fa fa-facebook fa-2x"></i></a>
+              </div>
+              <div class="social vk">
+                <a href="https://vk.com/club139525927" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+              </div>
+            </div>
+            <div class="footer__address">
+              <div class="footer__header">
+                <h3>Адрес</h3>
+              </div>
+              <p>123001, Москва, ул. Б. Садовая, 14</p>
+              <a href="https://yandex.ru/maps/?um=constructor%3A72e16fb0ffd8bd5e9b41f0607a1b624b2e756909d3f81287e76990a57ca254ec&amp;source=constructorStatic"
+                target="_blank"><img
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A72e16fb0ffd8bd5e9b41f0607a1b624b2e756909d3f81287e76990a57ca254ec&amp;width=320&amp;height=240&amp;lang=ru_RU"
+                  alt="" style="border: 0" /></a>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__header">
+                <h3>Как с нами связаться</h3>
+              </div>
+              <p><a href="mailto:nfywvbh@mail.ru"> nfywvbh@mail.ru</a></p>
+              <p>
+                <a href="mailto:fotonfywvbh@mail.ru">fotonfywvbh@mail.ru</a>
+              </p>
+              <p>
+                <a href="tel: 89060430106"> 8 (906) 043-01-06</a>
+              </p>
+            </div>
+          </div>
+          <div class="footer__line">&#169; 2022</div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
 </html>

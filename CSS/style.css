@@ -4,6 +4,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -23,70 +24,83 @@ body {
   line-height: 1.4;
   font-family: PFAgoraSansPro, "Myriad Pro", Helvetica, Arial, sans-serif;
 }
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
+
 .content {
   flex: 1 1 auto;
 }
+
 .header {
-  background-color: #495931;
+  background-color: #E5B97C;
 }
+
 .container {
   max-width: 1226px;
   margin: 0px auto;
 }
+
 .header__logo__image {
   padding: 1em;
 }
+
 .header__logo__image img {
   margin: 0 1em 0 0;
   float: right;
 }
-.header__logo__text {
-  color: #fff;
-}
+
 .header__text {
   color: #fff;
   font-size: 50px;
 }
+
 .header__phone-number {
   text-align: right;
   color: #fff;
   padding-bottom: 1em;
 }
+
 .header__phone-number p {
   font-size: 1.5em;
 }
+
 .header__phone-number p a {
   text-decoration: none;
   color: inherit;
 }
+
 .header__phone-number p a:hover {
   color: #bbb;
 }
+
 .menu {
-  background: #403e22;
+  background: #9C0736;
 }
+
 .menu__list {
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
 }
+
 .menu__list .menu__item:hover {
   text-decoration: underline;
 }
+
 .menu__item {
   text-transform: uppercase;
-  color: #ccab83;
+  color: #fff;
   font-size: 20px;
   font-weight: bold;
 }
+
 .menu__item:hover {
-  color: #dfc19e;
+  color: #f4f4f4;
 }
 
 /* Слайдер */
@@ -180,7 +194,8 @@ span.sim-dot {
   grid-gap: 2vw;
   margin: 1em;
 }
-.news-wrapper > .news-plate {
+
+.news-wrapper>.news-plate {
   padding: 0.5em;
   color: green;
   font-style: italic;
@@ -195,12 +210,15 @@ span.sim-dot {
 .news-image:hover {
   opacity: 0.7;
 }
+
 .news-text {
   color: inherit;
 }
+
 .news-text:hover {
   text-decoration: underline;
 }
+
 .main h2 {
   font-size: 24px;
   font-weight: bolder;
@@ -209,11 +227,13 @@ span.sim-dot {
   text-align: center;
   border-bottom: 3px solid #403e22e9;
 }
+
 #about {
   font-size: 18px;
   line-height: 1.6;
 }
-#about > p {
+
+#about>p {
   margin: 18px;
   text-indent: 20px;
   text-align: justify;
@@ -224,27 +244,66 @@ span.sim-dot {
   margin-bottom: 36px;
 }
 
-.footer {
-  background-color: #495931;
+#about-titles {
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 15px;
+  height: 50vh;
 }
+
+.title{
+  border: 1px solid #3b5998;
+  background-size: cover;
+  width: 100%;
+}
+.title a{
+  display: block;
+}
+.item1{
+  background-image: url(../images/about-titles/title1.png);
+}
+.item2{
+  background-image: url(../images/about-titles/title2.png);
+}
+.item3{
+  background-image: url(../images/about-titles/title3.png);
+}
+.item4{
+  background-image: url(../images/about-titles/title4.png);
+}
+.item5{
+  background-image: url(../images/about-titles/title5.png);
+}
+.footer {
+  background-color: #9C0736;
+}
+
 .footer__row {
   display: flex;
   height: 21em;
   justify-content: space-between;
   color: #ffff;
 }
-.footer__row h3 {
-  color: rgb(197, 118, 15);
+
+
+.footer__header {
+  color: #fff;
   font-size: 1.5em;
+  border-bottom: 2px solid #fff;
 }
+
+
 .footer__social {
   padding-top: 1em;
 }
+
 .footer__social .social {
   margin: 1em;
 }
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
 .social a {
   text-align: center;
   width: 48px;
@@ -259,37 +318,47 @@ span.sim-dot {
   background: #3b5998;
   color: #fff;
 }
+
 .facebook a:hover {
   background: #fff;
   color: #000;
 }
+
 .vk a:hover {
   background: #fff;
   color: #000;
 }
+
 .footer__social {
   padding-top: 1em;
 }
+
 .footer__address {
   padding-top: 1em;
 }
+
 .footer__address p {
   margin: 0.5em 0;
   font-size: 20px;
 }
+
 .footer__contacts {
   padding-top: 1em;
 }
+
 .footer__contacts p {
   margin: 0.5em 0;
   font-size: 20px;
 }
+
 .footer__contacts p a {
   color: inherit;
 }
+
 .footer__contacts p a:hover {
   color: #bbb;
 }
+
 .footer__line {
   display: flex;
   height: 30px;

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="images/dancing.png" type=" image/png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // инициализация слайдера
+            new ItcSimpleSlider(".itcss", {
+                loop: true,
+                autoplay: false,
+                interval: 5000,
+                swipe: true,
+            });
+        });
+    </script>
+    <title>ЦОПЭТ "Высокий стиль"</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="content">
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <div class="header__logo__image">
+                        <img src="images/studio_logo.png" alt="Логотип" width="10.5%"/>
+                    </div>
+
+                    <div class="header__text">
+                        <h1>
+                            Центр общегражданского Протокольного Этикета Торжеств "Высокий
+                            стиль"
+                        </h1>
+                    </div>
+                    <div class="header__phone-number">
+                        <h2>Звоните нам:</h2>
+                        <p>
+                            <a href="tel: 89060430106"> 8 (906) 043-01-06</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="content">
+        <nav class="menu">
+            <div class="container">
+                <ul class="menu__list">
+                    <li>
+                        <a class="menu__item" href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="#news">Новости</a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="#about">О нас</a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="menu_pages\courses.html">Курсы</a>
+                    </li>
+
+                    <li>
+                        <a class="menu__item" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <main class="main">
+            <div class="container">
+
+                <h3>Балы исторические и современные</h3>
+
+            </div>
+        </main>
+    </div>
+
+    <div class="content">
+        <footer class="footer" id="contacts">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__social">
+                        <div class="footer__header">
+                            <h3>Мы в социальных сетях</h3>
+                        </div>
+                        <div class="social facebook">
+                            <a href="https://www.facebook.com/groups/757119307733987/" target="_blank"><i
+                                    class="fa fa-facebook fa-2x"></i></a>
+                        </div>
+                        <div class="social vk">
+                            <a href="https://vk.com/club139525927" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer__address">
+                        <div class="footer__header">
+                            <h3>Адрес</h3>
+                        </div>
+                        <p>123001, Москва, ул. Б. Садовая, 14</p>
+                        <a href="https://yandex.ru/maps/?um=constructor%3A72e16fb0ffd8bd5e9b41f0607a1b624b2e756909d3f81287e76990a57ca254ec&amp;source=constructorStatic"
+                           target="_blank"><img
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A72e16fb0ffd8bd5e9b41f0607a1b624b2e756909d3f81287e76990a57ca254ec&amp;width=320&amp;height=240&amp;lang=ru_RU"
+                                alt="" style="border: 0"/></a>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__header">
+                            <h3>Как с нами связаться</h3>
+                        </div>
+                        <p><a href="mailto:nfywvbh@mail.ru"> nfywvbh@mail.ru</a></p>
+                        <p>
+                            <a href="mailto:fotonfywvbh@mail.ru">fotonfywvbh@mail.ru</a>
+                        </p>
+                        <p>
+                            <a href="tel: 89060430106"> 8 (906) 043-01-06</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__line">&#169; 2022</div>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+
+</html>

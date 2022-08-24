@@ -45,6 +45,7 @@
                     <div class="header__phone-number">
                         <h2>Звоните нам:</h2>
                         <p>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
                             <a href="tel: 89060430106"> 8 (906) 043-01-06</a>
                         </p>
                     </div>
@@ -67,10 +68,6 @@
                         <a class="menu__item" href="#about">О нас</a>
                     </li>
                     <li>
-                        <a class="menu__item" href="menu_pages\courses.html">Курсы</a>
-                    </li>
-
-                    <li>
                         <a class="menu__item" href="#contacts">Контакты</a>
                     </li>
                 </ul>
@@ -81,6 +78,10 @@
     <div class="content">
         <main class="main">
             <div class="container">
+
+<!--                <form th:action="@{/logout}" method="post">-->
+<!--                    <input type="submit" value="Sign Out"/>-->
+<!--                </form>-->
                 <!-- Слайдер -->
                 <!-- Разметка слайдера (html код) -->
                 <div class="itcss">
@@ -179,9 +180,11 @@
                         <a href="classification.html">
                             <div class="title item2">Классификация современных балов</div>
                         </a>
-                        <div class="title item3">Этика и этикет бала</div>
-                        <div class="title item4">Веерный этикет</div>
-                        <div class="title item5">Подготовка к балу</div>
+                        <a href="ethicsEtiquette.html">
+                            <div class="title item3">Этика и этикет бала</div></a>
+                        <a href="fanEtiquette.html"><div class="title item4">Веерный этикет</div></a>
+                        <a href="preparing.html"><div class="title item5">Подготовка к балу</div></a>
+
                     </div>
                 </article>
             </div>
@@ -208,7 +211,7 @@
                         <div class="footer__header">
                             <h3>Адрес</h3>
                         </div>
-                        <p>123001, Москва, ул. Б. Садовая, 14</p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> 123001, Москва, ул. Б. Садовая, 14</p>
                         <a href="https://yandex.ru/maps/?um=constructor%3A72e16fb0ffd8bd5e9b41f0607a1b624b2e756909d3f81287e76990a57ca254ec&amp;source=constructorStatic"
                            target="_blank"><img
                                 src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A72e16fb0ffd8bd5e9b41f0607a1b624b2e756909d3f81287e76990a57ca254ec&amp;width=320&amp;height=240&amp;lang=ru_RU"
@@ -218,12 +221,19 @@
                         <div class="footer__header">
                             <h3>Как с нами связаться</h3>
                         </div>
-                        <p><a href="mailto:nfywvbh@mail.ru"> nfywvbh@mail.ru</a></p>
                         <p>
-                            <a href="mailto:fotonfywvbh@mail.ru">fotonfywvbh@mail.ru</a>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="mailto:nfywvbh@mail.ru">nfywvbh@mail.ru</a></p>
+                        <p>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="mailto:fotonfywvbh@mail.ru">
+                                fotonfywvbh@mail.ru
+                            </a>
                         </p>
                         <p>
-                            <a href="tel: 89060430106"> 8 (906) 043-01-06</a>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <a href="tel: 89060430106">
+                                8 (906) 043-01-06</a>
                         </p>
                     </div>
                 </div>

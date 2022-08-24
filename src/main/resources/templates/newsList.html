@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="images/dancing.png" type=" image/png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>ЦОПЭТ "Высокий стиль"</title>
+</head>
+<body>
+<table>
+    <thead>
+    <th></th>
+    <th>Заголовок</th>
+    <th>Дата</th>
+    <th>Изображение</th>
+    <th>Текст</th>
+    </thead>
+    <tbody>
+    <div th:each="news, state : ${news}">
+        <tr>
+            <td th:text="${state.index + 1}"></td>
+            <td th:text="${news.name}"></td>
+            <td th:text="${news.date}"></td>
+            <td th:text="${news.image}"></td>
+            <td th:text="${news.text}"></td>
+
+            <td>
+                <a th:href="@{'/newsList/edit/' + ${news.id}}">Редактировать</a>
+            </td>
+            <td>
+                <a th:href="@{'/newsList/delete/' + ${news.id}}">Удалить</a>
+            </td>
+        </tr>
+    </div>
+    <tr>
+        <td colspan="4" align="center">
+            <a th:href="@{/productList/add}" class="badge badge-success">Добавить</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

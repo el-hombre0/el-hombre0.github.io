@@ -8,7 +8,17 @@
     <link rel="icon" href="images/dancing.png" type=" image/png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // инициализация слайдера
+            new ItcSimpleSlider(".itcss", {
+                loop: true,
+                autoplay: false,
+                interval: 5000,
+                swipe: true,
+            });
+        });
+    </script>
     <title>ЦОПЭТ "Высокий стиль"</title>
 </head>
 
@@ -44,13 +54,16 @@
             <div class="container">
                 <ul class="menu__list">
                     <li>
-                        <a class="menu__item" href="index.html">Главная</a>
+                        <a class="menu__item" href="#">Главная</a>
                     </li>
                     <li>
                         <a class="menu__item" href="#news">Новости</a>
                     </li>
                     <li>
                         <a class="menu__item" href="#about">О нас</a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="menu_pages\courses.html">Курсы</a>
                     </li>
 
                     <li>
@@ -65,23 +78,7 @@
         <main class="main">
             <div class="container">
 
-                <!-- Новости -->
-                <article id="news">
-                    <h2>Новости</h2>
-                    <div class="news-wrapper">
-                        <div class="news-plate" >
-                            <div class="news-name" th:text="${news_ind.name}"></div>
-                            <div class="pub-date">
-                                <p th:text="${news_ind.date}"></p>
-                            </div>
-                            <img th:src="@{'/images/news/' + ${news_ind.image}}" class="news-image" alt=""/>
-
-                            <div class="news-text" th:text="${news_ind.text}">
-
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                <h3>Классификация современных балов</h3>
 
             </div>
         </main>

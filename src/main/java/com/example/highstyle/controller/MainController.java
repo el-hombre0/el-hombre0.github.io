@@ -29,12 +29,12 @@ public class MainController {
         return "news";
     }
 
-    @GetMapping("historical")
+    @GetMapping("/historical")
     public String historical(Model model){
         return "historical";
     }
 
-    @GetMapping("classification")
+    @GetMapping("/classification")
     public String classification(Model model){
         return "classification";
     }

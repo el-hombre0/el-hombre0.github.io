@@ -42,7 +42,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(0, 0, 0);
   opacity: 0.5;
   user-select: none;
 }
@@ -100,10 +100,10 @@
 .itcss__indicator {
   flex: 0 1 auto;
   width: 30px;
-  height: 4px;
+  height: 7px;
   margin-right: 3px;
   margin-left: 3px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(0, 0, 0);
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -111,5 +111,5 @@
 }
 
 .itcss__indicator_active {
-  background-color: #fff;
+  background-color: #ff7b7b;
 }

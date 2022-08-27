@@ -8,17 +8,6 @@
     <link rel="icon" href="images/dancing.png" type=" image/png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // инициализация слайдера
-            new ItcSimpleSlider(".itcss", {
-                loop: true,
-                autoplay: false,
-                interval: 5000,
-                swipe: true,
-            });
-        });
-    </script>
     <title>ЦОПЭТ "Высокий стиль"</title>
 </head>
 
@@ -54,20 +43,16 @@
             <div class="container">
                 <ul class="menu__list">
                     <li>
-                        <a class="menu__item" href="#">Главная</a>
+                        <a class="menu__item" th:href="@{/}">Главная</a>
                     </li>
                     <li>
-                        <a class="menu__item" href="#news">Новости</a>
+                        <a class="menu__item" th:href="@{/#news}">Новости</a>
                     </li>
                     <li>
-                        <a class="menu__item" href="#about">О нас</a>
+                        <a class="menu__item" th:href="@{/#about}">О нас</a>
                     </li>
                     <li>
-                        <a class="menu__item" href="menu_pages\courses.html">Курсы</a>
-                    </li>
-
-                    <li>
-                        <a class="menu__item" href="#contacts">Контакты</a>
+                        <a class="menu__item" th:href="@{/#contacts}">Контакты</a>
                     </li>
                 </ul>
             </div>

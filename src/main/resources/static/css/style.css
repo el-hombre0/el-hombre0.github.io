@@ -215,10 +215,35 @@ span.sim-dot {
 .news-text {
   color: inherit;
 }
-
-.news-text:hover {
-  text-decoration: underline;
+/*Новость на индивидуальной странице*/
+#news-certain{
+  margin: 4em 2em;
 }
+.news-name-certain{
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: underline;
+  text-align: center;
+}
+.news-pub-date-certain{
+  font-style: italic;
+  color: green;
+  font-size: 20px;
+}
+.news-image-certain{
+  float: left;
+  max-width:25em;
+  height:auto;
+  margin: 1em;
+}
+.news-text-certain{
+  text-align: justify;
+  text-indent: 20px;
+  font-size: 24px;
+  padding: 1em;
+}
+
+/*Основная страница*/
 
 .main h2 {
   font-size: 24px;

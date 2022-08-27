@@ -2,10 +2,7 @@ package com.example.highstyle.model;
 
 import org.hibernate.annotations.Type;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Time;
 import java.util.Date;
 
@@ -21,6 +18,7 @@ public class News {
 
     private String image;
 
+    @Column(length = 60000)
     @Type(type="text")
     private String text;
 

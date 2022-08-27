@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Optional;
 
@@ -28,14 +28,22 @@ public class MainController {
         news_ind.ifPresent(o -> model.addAttribute("news_ind", o));
         return "news";
     }
-
     @GetMapping("/historical")
-    public String historical(Model model){
+    public String historical(){
         return "historical";
     }
 
     @GetMapping("/classification")
-    public String classification(Model model){
+    public String classification(){
         return "classification";
     }
+
+    @GetMapping("/ethicsEtiquette")
+    public String ethicsEtiquette(){return "ethicsEtiquette";}
+
+    @GetMapping("/fanEtiquette")
+    public String fanEtiquette(){return "fanEtiquette";}
+
+    @GetMapping("/preparing")
+    public String preparing(){return "preparing";}
 }

@@ -59,7 +59,7 @@
             <div class="container">
                 <ul class="menu__list">
                     <li>
-                        <a class="menu__item" href="#">Главная</a>
+                        <a class="menu__item" th:href="@{/}">Главная</a>
                     </li>
                     <li>
                         <a class="menu__item" href="#news">Новости</a>
@@ -174,16 +174,21 @@
                         Мы будем рады видеть Вас на наших балах и танцевальных вечерах!
                     </p>
                     <div id="about-titles">
-                        <a href="historical.html">
+                        <a th:href="@{/historical}">
                             <div class="title item1">Балы исторические и современные</div>
                         </a>
-                        <a href="classification.html">
+                        <a th:href="@{/classification}">
                             <div class="title item2">Классификация современных балов</div>
                         </a>
-                        <a href="ethicsEtiquette.html">
-                            <div class="title item3">Этика и этикет бала</div></a>
-                        <a href="fanEtiquette.html"><div class="title item4">Веерный этикет</div></a>
-                        <a href="preparing.html"><div class="title item5">Подготовка к балу</div></a>
+                        <a th:href="@{/ethicsEtiquette}">
+                            <div class="title item3">Этика и этикет бала</div>
+                        </a>
+                        <a th:href="@{/fanEtiquette}">
+                            <div class="title item4">Веерный этикет</div>
+                        </a>
+                        <a th:href="@{/preparing}">
+                            <div class="title item5">Подготовка к балу</div>
+                        </a>
 
                     </div>
                 </article>

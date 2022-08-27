@@ -8,33 +8,28 @@
     <link rel="icon" href="images/dancing.png" type=" image/png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <title>ЦОПЭТ "Высокий стиль"</title>
+    <title>ЦОПЭТ Форма новостей</title>
 </head>
 
 <body>
-<form th:action="@{/newsList/add}"
-      th:object="${product}"
-      method="post"
->
+<form th:action="@{/newsList/add}" th:object="${news}" method="post">
     <input type="text" th:field="*{id}" hidden />
-    <label for="newsName">Заголовок</label>
-    <input
-            type="text"
-            id="productName"
-            th:field="*{name}"
-            required
-    />
 
-    <label for="newsName">Дата</label>
+    <label for="name">Заголовок</label>
+    <input type="text" id="name" th:field="*{name}" placeholder="Новость" required/>
+    <br />
+<!--    <label for="newsName">Дата (гггг-мм-дд)</label>-->
+<!--    <input type="date" id="date" th:field="*{date}">-->
 
-    <label for="newsName">Изображение(s1.jpg)</label>
-    <input
-            type="text"
-            class="form-control"
-            id="image"
-            th:field="*{image}"
-            required
-    />
+    <label for="name">Изображение</label>
+    <input type="text" id="image" th:field="*{image}" placeholder="s1.jpg"/>
+    <br />
+    <label for="name">Текст новости</label>
+    <input type="text" id="text" placeholder="Введите текст">
+    <br />
+    <input type="submit" value="Сохранить">
 </form>
+
+
 </body>
 </html>

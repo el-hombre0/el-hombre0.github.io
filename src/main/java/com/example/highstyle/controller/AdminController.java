@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-@PreAuthorize("hasAuthority('ADMIN')")
+//@PreAuthorize("hasAuthority('ADMIN')")
 public class AdminController {
     @Autowired
     NewsRepository newsRepository;
@@ -39,7 +39,7 @@ public class AdminController {
     }
 
     @GetMapping("/newsList/delete/{newsId}")
-    public String newsListDelete(@PathVariable("productId") Integer id, Model model) {
+    public String newsListDelete(@PathVariable("newsId") Integer id, Model model) {
         newsRepository.deleteById(id);
         model.addAttribute("news", newsRepository.findAll());
         return "newsList";
